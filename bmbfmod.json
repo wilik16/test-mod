@@ -1,0 +1,28 @@
+{
+    "id": "test-mod",
+    "name": "Test Mod",
+    "author": "wilik",
+    "description": [
+        
+    ],
+    "category": "Gameplay",
+    "gameVersion": "1.6.0",
+    "version": "0.1.0",
+    "platform": "Quest",
+    "components": [
+        {
+            "type": "HookMod",
+            "installAction": {
+                "installLibraryFile": "libtest-mod.so"
+            },
+            "uninstallAction": {
+                "removeLibraryFile": "libtest-mod.so"
+            }
+        },
+        {
+            "type": "FileCopyMod",
+            "sourceFileName": "libbeatsaber-hook_2019_0_2_1.so",
+            "targetRootedPathAndFileName": "/sdcard/Android/data/com.beatgames.beatsaber/files/libs/libbeatsaber-hook_2019_0_2_1.so"
+        }
+    ]
+}
